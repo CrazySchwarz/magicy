@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'KontoraExtraBlack';
+  src: url('fonts/kontora-extrablack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.welcomestuffmain {
+    background-color: #0F1328;
+    position: relative;
+    top: -250px;
+    height: 135px;
+    width: calc(100% - 40px); /* 60px sağ + 60px sol */
+    margin: 0 20px; /* sağ ve sol dış boşluk */
+    border-radius: 7px;
+    border: 1.35px solid rgba(255, 255, 255, 0.15); /* Beyaz, %15 şeffaf */
+    overflow:  hidden/* Taşmayı engeller */
+}
+
+.richguy {
+    height: 250px;
+    left: 56.5%;
+    position: relative;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .textbir {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .richguy {
+    left: 50%;
+  }
+  .bluelight {
+    display: none;
+  }
+  .bluedominus {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .richguy {
+    display: none;
+  }
+  .textbir {
+    width: 100%;
+margin-left: 5%;
+margin-right: 25%;
+height: 10px;
+  font-weight: 500;
+  max-width: 100%;
+  min-width: 50%;
+
+  }
+  .welcomeregister {
+    width: 100%;
+margin-left: 10%;
+margin-right: 25%;
+height: 10px;
+  }
+}
+
+.bluelight {
+    position: relative;
+    height: 550px;
+    width: 1000px;
+    bottom: 335px;
+    right: 50%;
+    opacity: 0.45;
+    z-index: 1;
+}
+
+.textbir {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 3;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.welcomeregister {
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+  top: 55%;
+  left: 7.5%;
+  z-index: 3;
+  background-color: rgb(35, 125, 199);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid rgb(14, 142, 253);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-width: 1px;
+}
+
+@keyframes floatTilt {
+  0% {
+    transform: translateY(0px) rotate(10deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(10deg);
+  }
+}
+
+.bluedominus {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  left: 350px;
+  animation: floatTilt 6s ease-in-out infinite;
+  opacity: 0.85;
+}

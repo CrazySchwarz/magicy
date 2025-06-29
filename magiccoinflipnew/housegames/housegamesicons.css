@@ -1,0 +1,66 @@
+.originals-images-container {
+    position: relative; /* absolute değil */
+    top: 312.5px;           /* top'u relative içinde biraz oynayabilirsin */
+    height: 190px;
+    width: calc(100% - 40px);
+    margin: 0 20px;     /* sağ ve soldan eşit boşluk */
+     /* istersen */
+    border-radius: 7.5px;
+    padding: 40px 40px;
+    z-index: 1;
+    transform: none;    /* kaldır */
+    align-items: center;
+    
+}
+
+.originals-images-container {
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap; /* Taşarsa alt satıra geçer */
+  gap: 10px; /* Resimler arası boşluk */
+  padding: 0px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.originals-images-container img {
+  width: 150px;
+  max-width: 1000px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 7px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.originals-images-container img:hover {
+  transform: scale(1.01); /* Hover efekti (isteğe bağlı) */
+  cursor: pointer;
+  border: #ffffffc2 solid 1px;
+}
+
+@media (max-width: 768px) {
+  .originals-images-container img {
+    left: -15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .originals-images-container img {
+    width: 125px;
+  }
+
+
+@media (max-width: 369px) {
+  .originals-images-container img {
+    transform: scale(1.5);
+    width: 182px;
+  }
+  .originals-images-container {
+    gap: 130px;
+    top: 370px;
+    left: 40px;
+  }
+}
+
+
