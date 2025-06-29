@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 405px) {
   .originals-images-container img {
     width: 125px;
   }
