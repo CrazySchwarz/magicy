@@ -1,6 +1,6 @@
 .originals-images-container {
     position: relative; /* absolute değil */
-    top: 162.5px;           /* top'u relative içinde biraz oynayabilirsin */
+    top: 165.5px;           /* top'u relative içinde biraz oynayabilirsin */
     height: 190px;
     width: calc(100% - 40px);
     margin: 0 20px;     /* sağ ve soldan eşit boşluk */

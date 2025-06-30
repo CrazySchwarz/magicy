@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const logo = document.querySelector(".loadingscreenlogo");
   const text = document.querySelector(".loading-text");
 
-  const displayTime = Math.floor(Math.random() * 1000) + 1500;
+  const displayTime = Math.floor(Math.random() * 100) + 150;
 
   logo.style.opacity = "1";
   text.style.opacity = "1";
@@ -38,4 +38,16 @@ window.addEventListener("DOMContentLoaded", () => {
   }, displayTime);
 });
 
+function logDistanceFromTop(selector) {
+  const el = document.querySelector(selector);
+  if (!el) {
+    console.log(`${selector} bulunamadı.`);
+    return;
+  }
+  const distance = el.getBoundingClientRect().top + window.scrollY;
+  console.log(`${selector} ekranın üstünden uzaklığı: ${distance}px`);
+}
 
+logDistanceFromTop('.promotionscontainer');
+logDistanceFromTop('.welcomestuffmain');
+logDistanceFromTop('.housegamestextcontainer');

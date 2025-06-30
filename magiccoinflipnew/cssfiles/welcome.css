@@ -9,7 +9,7 @@
 .welcomestuffmain {
     background-color: #0F1328;
     position: relative;
-    top: -250px;
+    top: -270px;
     height: 135px;
     width: calc(100% - 40px); /* 60px sağ + 60px sol */
     margin: 0 20px; /* sağ ve sol dış boşluk */
