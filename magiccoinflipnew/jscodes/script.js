@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const logo = document.querySelector(".loadingscreenlogo");
   const text = document.querySelector(".loading-text");
 
-  const displayTime = Math.floor(Math.random() * 100) + 150;
+  const displayTime = Math.floor(Math.random() * 1000) + 1500;
 
   logo.style.opacity = "1";
   text.style.opacity = "1";

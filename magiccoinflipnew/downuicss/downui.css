@@ -9,7 +9,7 @@
     border-top: #ffffff3a solid 0.25px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .downui {
     display: none;
   }

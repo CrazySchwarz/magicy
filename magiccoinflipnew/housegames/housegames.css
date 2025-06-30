@@ -1,6 +1,6 @@
 .housegamestextcontainer {
     position: relative; /* absolute değil */
-    top: 325px;           /* top'u relative içinde biraz oynayabilirsin */
+    top: 175px;           /* top'u relative içinde biraz oynayabilirsin */
     height: 20px;
     width: calc(100% - 40px);
     margin: 0 20px;     /* sağ ve soldan eşit boşluk */

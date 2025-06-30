@@ -1,6 +1,6 @@
 .originals-images-container {
     position: relative; /* absolute değil */
-    top: 312.5px;           /* top'u relative içinde biraz oynayabilirsin */
+    top: 162.5px;           /* top'u relative içinde biraz oynayabilirsin */
     height: 190px;
     width: calc(100% - 40px);
     margin: 0 20px;     /* sağ ve soldan eşit boşluk */
@@ -36,7 +36,7 @@
 .originals-images-container img:hover {
   transform: scale(1.01); /* Hover efekti (isteğe bağlı) */
   cursor: pointer;
-  border: #ffffffc2 solid 1px;
+  border: #ffffffc2 solid 0px;
 }
 
 @media (max-width: 768px) {
@@ -48,6 +48,7 @@
 @media (max-width: 405px) {
   .originals-images-container img {
     width: 125px;
+    }
   }
 
 
@@ -58,7 +59,7 @@
   }
   .originals-images-container {
     gap: 130px;
-    top: 370px;
+    top: 225px;
     left: 40px;
   }
 }
