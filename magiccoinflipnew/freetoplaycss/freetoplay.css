@@ -1,0 +1,25 @@
+.freetoplaycontainer {
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    border: #3A426B solid 1.5px;
+    border-radius: 7px;
+    top: 25px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freetoplayspan {
+  font-weight: 500;                 /* font-[500] */
+  font-size: 1.25rem;               /* text-xl */
+  background: linear-gradient(to top right, #1ac4f8, #bcecff); /* from-secondaryDark to-secondary */
+  -webkit-background-clip: text;   /* bg-clip-text */
+  -webkit-text-fill-color: transparent; /* text-transparent */
+  background-clip: text;           /* bazı tarayıcılar için */
+  color: transparent;              /* text-transparent */
+  width: fit-content;              /* w-fit */
+  line-height: 40px;               /* konteyner ortalaması için (daha önce eklenmişti) */
+}

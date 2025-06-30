@@ -1,67 +1,42 @@
 .originals-images-container {
-    position: relative; /* absolute değil */
-    top: 165.5px;           /* top'u relative içinde biraz oynayabilirsin */
-    height: 190px;
-    width: calc(100% - 40px);
-    margin: 0 20px;     /* sağ ve soldan eşit boşluk */
-     /* istersen */
-    border-radius: 7.5px;
-    padding: 40px 40px;
-    z-index: 1;
-    transform: none;    /* kaldır */
-    align-items: center;
-    
+  position: relative;
+  top: 155.5px;
+  height: 200px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 7.5px;
+  z-index: 1;
 }
 
-.originals-images-container {
-  display: flex; 
-  align-items: center;
-  flex-wrap: wrap; /* Taşarsa alt satıra geçer */
-  gap: 10px; /* Resimler arası boşluk */
-  padding: 0px;
-  max-width: 100%;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0);
+
+.originals-images-container::-webkit-scrollbar {
+  display: none;
 }
 
 .originals-images-container img {
   width: 150px;
-  max-width: 1000px;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 7px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s ease;
+  
 }
+
 
 .originals-images-container img:hover {
   transform: scale(1.01); /* Hover efekti (isteğe bağlı) */
   cursor: pointer;
   border: #ffffffc2 solid 0px;
-}
-
-@media (max-width: 768px) {
-  .originals-images-container img {
-    left: -15px;
-  }
-}
-
-@media (max-width: 405px) {
-  .originals-images-container img {
-    width: 125px;
-    }
-  }
-
-
-@media (max-width: 369px) {
-  .originals-images-container img {
-    transform: scale(1.5);
-    width: 182px;
-  }
-  .originals-images-container {
-    gap: 130px;
-    top: 225px;
-    left: 40px;
-  }
 }
 
 

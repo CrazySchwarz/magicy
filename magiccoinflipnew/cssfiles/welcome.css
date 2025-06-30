@@ -15,7 +15,7 @@
     margin: 0 20px; /* sağ ve sol dış boşluk */
     border-radius: 7px;
     border: 1.35px solid rgba(255, 255, 255, 0.15); /* Beyaz, %15 şeffaf */
-    overflow:  hidden/* Taşmayı engeller */
+    overflow:  hidden;/* Taşmayı engeller */
 }
 
 .richguy {
