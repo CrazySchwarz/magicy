@@ -46,10 +46,14 @@ header {
   z-index: 1000;
 }
 
-header img {
+.normallogo {
   height: 55px;
   width: auto;
 }
+
+.smallestlogo {
+  height: 55px;
+  }
 
 /* Laptop ve daha küçük cihazlar için */
 @media (max-width: 1280px) {
@@ -57,8 +61,20 @@ header img {
     height: 70px;
   }
 
-  header img {
+  .normallogo {
     height: 45px;
+  }
+}
+
+@media (min-width: 600px) {
+  .smallestlogo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .normallogo {
+    display: none;
   }
 }
 
