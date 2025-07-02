@@ -25,7 +25,7 @@
 }
 
 .downuichat {
-  position: fixed;
+  position: sticky;
   height: 75px;
   right: 0px;
   background-color: #171d3d;
@@ -38,7 +38,7 @@
 
 .downuichatimeyg {
   top: 5px;
-  position: relative;
+  position: sticky;
   height: 50px;
   right: 0px;
   transition: opacity 0.25s ease;
