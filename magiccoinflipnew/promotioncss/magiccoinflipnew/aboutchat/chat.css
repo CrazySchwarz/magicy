@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'CarmenSans';
+  src: url('/fonts/CarmenSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium genelde 500’dür */
+  font-style: normal;
+}
+
+
+.chatmain {
+    background-color: #191f3b;
+    position: fixed;
+    height: 2250px;
+    width: 300px;
+    right: 0px;
+    border-left: 2px solid #242945;
+    z-index: 100;
+    margin: 0 auto;
+}
+
+@media (max-width: 1022px) {
+    .chatmain {
+        display: none;
+    }
+}
+
+.raincontainer {
+    top: 70px;
+    position: relative;
+    background: linear-gradient(185deg, #191f3b 1%, #82e1ff33), #2d2f40;
+    z-index: 101;
+    left: 0px;
+    height: 90px;
+    width: 275px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7.5px;
+    border: #a3e4f886 solid 1px;
+}   
+
+.liverainspan {
+    color: rgb(255 255 255);
+    position: relative;
+    font-family: 'CarmenSans', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    left: 5px;
+    top: 1px;
+}
+
+.rainamount {
+    font-family: 'CarmenSans', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    border-radius: 7px;
+    font-size: large;
+}
+
+.backgroundofrainamount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(32, 34, 47, 0);
+    height: 25px;
+    margin-top: 17px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border: rgba(255, 255, 255, 0.1) solid 0.25px;
+    border-radius: 7px;
+    overflow:  hidden;
+}
+
+.tiprain {
+    position: relative;
+    font-family: 'CarmenSans', sans-serif;
+    font-size: large;
+    left: 75px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(14, 142, 253);
+    color: white;
+    border: solid 0px;
+}

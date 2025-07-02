@@ -1,0 +1,85 @@
+.downui {
+    position: fixed;
+    width: 100%;
+    background-color: #171d3d;
+    color: #171d3d;
+    bottom: 0px;
+    z-index: 1000;
+    height: 75px;
+    border-top: #ffffff3a solid 0.25px;
+}
+
+@media (min-width: 1023px) {
+  .downui {
+    display: none;
+  }
+  .downuichat {
+    display: none;
+  }
+  .downuichatimeyg {
+    display: none;
+  }
+  .downuibluechatimg {
+    display: none;
+  }
+}
+
+.downuichat {
+  position: absolute;
+  bottom: 0;           /* sticky için alt yapışma */
+  right: 0;            /* sağa sıfır */
+  height: 75px;
+  width: 65px;
+  background-color: #171d3d;
+  border: solid 0px;
+  cursor: pointer;
+  padding-right: 5px;
+  transform: translateZ(0);
+  display: flex;       /* içindekileri hizalamak için flex */
+  align-items: center; /* dikey ortalama */
+  justify-content: flex-end; /* sağa yasla */
+}
+
+.downuichatimeyg {
+  position: sticky;   /* sticky yerine relative yapalım */
+  height: 50px;
+  right: 0;             /* sağa sıfır */
+  transition: opacity 0.25s ease;
+  margin-left: 100px;     /* görsel arası boşluk */
+}
+
+.downuibluechatimg {
+  position: relative;
+  height: 50px;
+  right: 0;             /* sağa sıfır */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  display: block;
+  margin-left: -50px;
+}
+
+.downuichat:hover {
+  border-top: #237dc7 solid 2px;
+  background-color: rgba(35, 125, 199, 0.151);
+}
+
+.downuichat:hover .downuichatimeyg {
+  opacity: 0;
+}
+
+.downuichat:hover .downuibluechatimg {
+  opacity: 1; 
+}
+
+.downuichat:focus .downuibluechatimg {
+  opacity: 1;
+}
+
+.downuichat:focus .downuichatimeyg {
+  opacity: 0;
+}
+
+.downuichat:focus {
+  border-top: #237dc7 solid 2px;
+  background-color: rgba(35, 125, 199, 0.151);
+}

@@ -1,0 +1,42 @@
+.originals-images-container {
+  position: relative;
+  top: 155.5px;
+  height: 200px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 7.5px;
+  z-index: 1;
+}
+
+
+.originals-images-container::-webkit-scrollbar {
+  display: none;
+}
+
+.originals-images-container img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  
+}
+
+
+.originals-images-container img:hover {
+  transform: scale(1.01); /* Hover efekti (isteğe bağlı) */
+  cursor: pointer;
+  border: #ffffffc2 solid 0px;
+}
+
+
