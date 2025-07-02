@@ -1,3 +1,12 @@
+/* style.css */
+@font-face {
+  font-family: 'CarmenSans';
+  src: url('/fonts/CarmenSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium genelde 500’dür */
+  font-style: normal;
+}
+
+
 .housegamestextcontainer {
     position: relative; /* absolute değil */
     top: 160px;           /* top'u relative içinde biraz oynayabilirsin */
@@ -22,6 +31,7 @@
   letter-spacing: 0px;
   left: -20px;
   color: #999EBE;
+  font-family: 'CarmenSans', sans-serif;
 }
 
 .gameplayicon {

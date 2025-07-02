@@ -6,6 +6,15 @@
   font-display: swap;
 }
 
+/* style.css */
+@font-face {
+  font-family: 'CarmenSans';
+  src: url('/fonts/CarmenSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium genelde 500’dür */
+  font-style: normal;
+}
+
+
 .welcomestuffmain {
     background-color: #0F1328;
     position: relative;
@@ -84,7 +93,7 @@ height: 10px;
   left: 5%;
   z-index: 3;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'CarmenSans', sans-serif;
   font-size: 23px;
   font-weight: 500;
 }
@@ -99,7 +108,7 @@ height: 10px;
   z-index: 3;
   background-color: rgb(35, 125, 199);
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'CarmenSans', sans-serif;
   font-weight: 500;
   cursor: pointer;
   border: 1px solid rgb(14, 142, 253);

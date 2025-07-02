@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'CarmenSans';
+  src: url('/fonts/CarmenSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium genelde 500’dür */
+  font-style: normal;
+}
+
+
 .freetoplaycontainer {
     position: relative;
     width: calc(100% - 40px);
@@ -24,7 +32,7 @@
   color: transparent;              /* text-transparent */
   width: fit-content;              /* w-fit */
   line-height: 40px;               /* konteyner ortalaması için (daha önce eklenmişti) */
-  font-family: "Montserrat", sans-serif;
+  font-family: 'CarmenSans', sans-serif;
 }
 
 .nopurcasheneededspan {
@@ -40,7 +48,7 @@
   color: transparent;              /* text-transparent */
   width: fit-content;              /* w-fit */
   line-height: 40px;               /* konteyner ortalaması için (daha önce eklenmişti) */
-  font-family: "Montserrat", sans-serif;
+  font-family: 'CarmenSans', sans-serif;
 }
 
 @media (max-width: 521px) {
