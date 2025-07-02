@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'KontoraExtraBlack';
+  src: url('fonts/kontora-extrablack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Genel reset ve temel stiller */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0F1328;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  margin: 10px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  min-height: 2000px;
+  font-family: 'CarmenSans', sans-serif;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #191f3b;
+  display: flex;
+  align-items: center; /* Dikey ortalama */
+  justify-content: flex-start; /* Soldan hizalı */
+  padding-left: 20px;
+  border-bottom: 2px solid #242945;
+  z-index: 1000;
+}
+
+.normallogo {
+  height: 55px;
+  width: auto;
+}
+
+.smallestlogo {
+  height: 55px;
+  }
+
+/* Laptop ve daha küçük cihazlar için */
+@media (max-width: 1280px) {
+  header {
+    height: 70px;
+  }
+
+  .normallogo {
+    height: 45px;
+  }
+}
+
+@media (min-width: 600px) {
+  .smallestlogo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .normallogo {
+    display: none;
+  }
+}
+
+
+/* Container */
+.container {
+  max-width: 1000px;
+  width: calc(100% - 20px);
+  margin: 80px 30px 10px 30px;
+  margin-top: 80px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 2250px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #ccc;
+
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: calc(100% - 0px);
+  }
+}
+
+
+@media (max-width: 369px) {
+  .container {
+    margin-bottom: 72.5px;
+  }
+}
+
+/* Responsive */
+
+/* Yükleme ekranı */
+.loadingsitescreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.loadingbackgroundcolored {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #141931;
+  z-index: -1;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.loadingscreenlogo {
+  height: 130px;
+  animation: flicker 0.75s infinite alternate;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  font-family: 'KontoraExtraBlack', sans-serif;
+  color: #ccc;
+  position: fixed;
+  top: 55%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+

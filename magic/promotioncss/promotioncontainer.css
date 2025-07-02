@@ -1,0 +1,96 @@
+.promotionscontainer {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 10px;
+  scroll-behavior: smooth;
+  user-select: none;
+  cursor: grab;
+  border-radius: 7.5px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
+
+.promotionone,
+.promotiontwo {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  pointer-events: none; /* Bu önemli: Drag yapılırken img tıklamayı engellemesin */
+}
+.promotionscontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.promotionscontainer {
+  -ms-overflow-style: none;  /* Internet Explorer için */
+  scrollbar-width: none;     /* Firefox için */
+}
+
+/* Scroll için sadece mobilde aktif */
+@media (max-width: 768px) {
+  .promotionscontainer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+  }
+
+  .promotionscontainer::-webkit-scrollbar {
+    display: none; /* scrollbar gizle */
+  }
+
+  .promotionone,
+  .promotiontwo {
+    flex: 0 0 auto; /* kaydırılabilir öğeler için */
+  }
+}
+
+
+.promotionone,
+.promotiontwo {
+  border-radius: 10px;
+  width: 500px;
+  height: 200px;         /* Ortak yükseklik */
+  object-fit: cover;     /* Görseli kırparak hizalar */
+}
+
+.prospan {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 25.5px;
+  width: 80px;
+  top: 10px;
+  left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(3, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.prospantwo {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 25.5px;
+  width: 80px;
+  top: 10px;
+  left: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(3, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+}

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'KontoraExtraBlack';
+  src: url('/fonts/kontora-extrablack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.register {
+  position: fixed;
+  height: 45px;
+  width: 85px;
+  right: 43px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(35, 125, 199);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid rgb(14, 142, 253);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-width: 1px;
+}
+
+.register:hover {
+  background-color: rgba(31, 154, 255, 0.65);
+  color: white;
+  border-color: rgb(14, 142, 253);
+}
+
+.login {
+  position: fixed;
+  height: 45px;
+  width: 85px;
+  right: 140px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #191f3b;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0.1px solid #7576804f;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-width: 1px;
+}
+
+.login:hover {
+  background-color: #191f3b8c;
+  color: white;
+  border-color: #7576807e;
+}

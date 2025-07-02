@@ -1,0 +1,42 @@
+/* style.css */
+@font-face {
+  font-family: 'CarmenSans';
+  src: url('/fonts/CarmenSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium genelde 500’dür */
+  font-style: normal;
+}
+
+
+.housegamestextcontainer {
+    position: relative; /* absolute değil */
+    top: 160px;           /* top'u relative içinde biraz oynayabilirsin */
+    height: 20px;
+    width: calc(100% - 40px);
+    margin: 0 20px;     /* sağ ve soldan eşit boşluk */
+    background-color: #191f3b00; /* istersen */
+    border-radius: 7.5px;
+    padding: 20px 40px;
+    z-index: 1;
+    transform: none;    /* kaldır */
+    align-items: center;
+    border: #3A426B solid 1.5px;
+}
+
+.housegames {
+  position: relative;
+  top: -15px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  left: -20px;
+  color: #999EBE;
+  font-family: 'CarmenSans', sans-serif;
+}
+
+.gameplayicon {
+    position: relative;
+    height: 20px;
+    left: -25px;
+    top: -10px;
+}

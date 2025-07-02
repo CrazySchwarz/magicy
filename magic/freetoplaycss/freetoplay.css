@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'CarmenSans';
+  src: url('/fonts/CarmenSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium genelde 500’dür */
+  font-style: normal;
+}
+
+
+.freetoplaycontainer {
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    border: #3a426b6c solid 1px;
+    border-radius: 7px;
+    height: 70px;
+    background-color: #3a426b2f;
+
+    display: flex;
+    align-items: center;
+}
+
+.freetoplayspan {
+  position: relative;
+  left: 12.5px;
+  top: -15px;
+  font-weight: bolder;               /* font-[500] */
+  font-size: 1.5rem;               /* text-xl */
+  background: linear-gradient(to top right, #34c6f3, #b6e2f3); /* from-secondaryDark to-secondary */
+  -webkit-background-clip: text;   /* bg-clip-text */
+  -webkit-text-fill-color: transparent; /* text-transparent */
+  background-clip: text;           /* bazı tarayıcılar için */
+  color: transparent;              /* text-transparent */
+  width: fit-content;              /* w-fit */
+  line-height: 40px;               /* konteyner ortalaması için (daha önce eklenmişti) */
+  font-family: 'CarmenSans', sans-serif;
+}
+
+.nopurcasheneededspan {
+  position: relative;
+  left: -140px;
+  top: 10px;
+  font-weight: bolder;               /* font-[500] */
+  font-size: 1.5rem;               /* text-xl */
+  background: rgb(133, 150, 173); /* from-secondaryDark to-secondary */
+  -webkit-background-clip: text;   /* bg-clip-text */
+  -webkit-text-fill-color: transparent; /* text-transparent */
+  background-clip: text;           /* bazı tarayıcılar için */
+  color: transparent;              /* text-transparent */
+  width: fit-content;              /* w-fit */
+  line-height: 40px;               /* konteyner ortalaması için (daha önce eklenmişti) */
+  font-family: 'CarmenSans', sans-serif;
+}
+
+@media (max-width: 521px) {
+  .freetoplayspan,
+  .nopurcasheneededspan{
+    font-size: medium;
+  }
+  .nopurcasheneededspan {
+    left: -90px;
+  }
+  }
+

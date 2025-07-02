@@ -1,0 +1,18 @@
+.downui {
+    position: fixed;
+    width: 100%;
+    background-color: #171d3d;
+    color: #171d3d;
+    bottom: 0px;
+    z-index: 1000;
+    height: 75px;
+    border-top: #ffffff3a solid 0.25px;
+}
+
+@media (min-width: 1023px) {
+  .downui {
+    display: none;
+  }
+}
+
+  
