@@ -32,6 +32,8 @@
   border: solid 0px;
   cursor: pointer;
   padding-right: 5px;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .downuichatimeyg {
