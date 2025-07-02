@@ -59,3 +59,7 @@ window.addEventListener("load", () => {
 
 
 
+window.addEventListener('scroll', () => {
+  const el = document.querySelector('.downuichat');
+  el.style.top = window.scrollY + window.innerHeight - el.offsetHeight + 'px';
+});
